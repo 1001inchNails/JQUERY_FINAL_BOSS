@@ -18,4 +18,4 @@ No podría haberlo hecho sin vosotros, chicos.
 [PublicApis](https://publicapis.dev/) 
 
 
-A veces algun perro no carga, debe ser cosa de la API, a mí que me registren
+A veces algun perro no carga, porque mezclan videos tambien
