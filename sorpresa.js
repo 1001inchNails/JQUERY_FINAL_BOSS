@@ -77,7 +77,7 @@
     iframeContainer.append(iframe);
     $('.main').append(iframeContainer);
 
-        setTimeout(function() {
+        setTimeout(function() {    // recarga la pagina despues de 10 segundos (mas o menos la duracion del video)
             location.reload();
         }, 10000);
             
@@ -108,16 +108,16 @@
 
     
 
-    function mensajeFinJuego() {
-        $.getJSON('https://random.dog/woof.json?ref=public_apis', function(data) {
+    function mensajeFinJuego() {    // al ganar una partida, mostramos perrete
+        $.getJSON('https://random.dog/woof.json?ref=public_apis', function(data) {    // cogemos foto de perrete de api
             const imageUrl = data.url;
 
-            $(".main").empty();
-            $(".main").append(`<img id="secretDog" src="${imageUrl}">`);
+            $(".main").empty();    //vaciamos main
+            $(".main").append(`<img id="secretDog" src="${imageUrl}">`);    // y ponemos perrete
     
             setTimeout(function() {
                 location.reload();
-            }, 5000);
+            }, 5000);    // despues de 5 segundos, recargamos
         });
     }
     
